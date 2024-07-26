@@ -549,6 +549,10 @@
     .header-logo-icon{
         margin-right: 400px;
     }
+    .container-offer{
+        max-width: 1250px;
+        margin: 0;
+    }
     .container {
         max-width: 1250px;
         margin: 0 auto;

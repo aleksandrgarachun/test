@@ -41,7 +41,11 @@ hr {
 
 
 }
-
+.container-offer {
+    max-width: 100%;
+    padding: 20px 15px;
+    background-color: rgba(212, 215, 216, 0.371);
+}
 .container {
     
     max-width: 100%;
