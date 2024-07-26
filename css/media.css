@@ -1,4 +1,63 @@
 @media screen and (min-width: 320px) {
+    .social-item-footer{
+        /*width: 40px;*/
+        margin-bottom: 15px;
+    }
+    
+    .footer-social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    .social-link-footer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .address-info-footer {
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #b8b5b5;
+        gap: 40px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        white-space: nowrap;
+        
+    }
+
+    .address-info-footer:hover,
+    .address-info-footer:focus {
+        color: #404bbf;
+    }
+
+
+    .item-address {
+        display: flex;
+        justify-content: center;
+    }
+    .src-footer {
+        color: aliceblue;
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .list-nav-sup{
+        white-space: nowrap;
+        display: grid;
+        place-items: center;
+    }
+    .navigation-suport {
+        margin-bottom: 10px;
+        color: aliceblue;
+    }
+    .paragraph-subscribe {
+        margin-bottom: 30px;
+    }
+    .list-nav-sup li:last-child {
+        margin-bottom: 50px; 
+      }
     .img-webakula {
         width: 120px;
         height: 20px;
@@ -41,10 +100,12 @@
         text-decoration: none; 
         color: #080808;
         font-weight: bold;
+        transition: background-color 0.2s ease, color 0.2s ease;
+
     }
     
     .nav-link:hover {
-        color: #0b74e5; 
+        color: #404bbf; 
     }
 
     
@@ -165,16 +226,16 @@
     .paragraph-footer-social {
         display: flex;
         justify-content: center;
+        margin: 0;
     }
     .paragraph-footer {
         margin: 0 auto;
         display: flex;
     }
     .list-socials-footer {
-        display: flex;
+        display: block;
         gap: 16px;
         justify-content: center;
-        margin-bottom: 72px;
     }
     .subscribe-footer {
         margin-left: 0;
@@ -208,29 +269,51 @@
 
 
 
-@media screen and (min-width: 608px) and (max-width: 767px) {
-.img-team:not(:last-child) {
-        margin-bottom: 72px;
-        
-    }
-    .list-team {
-        flex-direction: column;
-    }
-    
 
-}
+
+@media screen and (min-width: 608px) and (max-width: 767px) {
+    .img-team:not(:last-child) {
+            margin-bottom: 72px;
+            
+        }
+        .list-team {
+            flex-direction: column;
+        }
+        
+    
+    }
 
 
 
 @media screen and (min-width: 768px) {
+    
     hr {
         border: none; 
         height: 2px; 
+        background-color: #62616164; 
         margin: 20px 0; 
         width: 100%; 
         margin-left: auto; 
         margin-right: auto;
-        max-width: 250px;
+        max-width: 400px;
+      }
+    
+    .paragraph-subscribe {
+        justify-content: left;
+    }
+    .list-nav-sup{
+        white-space: nowrap;
+        display: block;
+    }
+    .subscribe-footer{
+        margin-right: 25px;
+    }
+    .vertical-line {
+        border: none; 
+      border-left: 2px solid #62616164; 
+      height: 50px; 
+      margin: 0 20px;
+      width: 2px;
       }
     .ul-point{
         display: flex;
@@ -263,7 +346,7 @@
     }
     
     .nav-link:hover {
-        color: #007BFF; 
+        color: #066fe0; 
     }
 
 
@@ -378,10 +461,7 @@
         gap: 24px;
 
     }
-    .paragraph-subscribe {
-        display: block;
-        
-    }
+    
     .email-footer {
         width: 264px;
         margin-bottom: 0;
@@ -399,6 +479,7 @@
         margin: 0 108px;
         gap: 24px;
         row-gap: 72px;
+        justify-content: center;
     }
     
 }
@@ -423,16 +504,19 @@
 
 
 @media screen and (min-width: 1158px) {
-    hr {
+    .social-item-footer {
+        display: inline flow-root list-item;
+        margin-right: 25px;
+        
+    }
+    .vertical-line {
         border: none; 
         height: 2px; 
+        background-color: #62616164; 
         margin: 20px 0; 
         width: 100%; 
         margin-left: auto; 
         margin-right: auto;
-        max-width: 250px;
-        width: 350px;
-        max-width: 400px;
       }
     .paragraph-footer{
         width: auto;
@@ -596,11 +680,9 @@
        display: block;
    }
    .list-socials-footer {
-       display: flex;
-       gap: 16px;
-       justify-content: left;
+       display: block;
         margin-bottom: 0;
-        margin-right: 80px;
+        margin-right: 0;
    }
     .email-line {
         display: flex;
@@ -650,7 +732,7 @@
         /*max-width: 320px;*/
         max-height: 432px;
         /*возможно убрать везде*/
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-img/back.png);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-img/back.jpg);
     }
 }
 
@@ -660,7 +742,7 @@
         /*max-width: 320px;*/
         max-height: 432px;
         /*возможно убрать везде*/
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-img/back.png);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-img/back.jpg);
     }
 }
 /*Tablet*/
@@ -668,7 +750,7 @@
     .order-sec {
         /*max-width: 768px;*/
         max-height: 436px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-img/back.png);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(images/background-img/back.jpg);
     }
 }
 
@@ -677,7 +759,7 @@
         /*max-width: 768px;*/
         max-height: 436px;
         /*возможно убрать везде*/
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-img/back.png);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-img/back.jpg);
     }
 }
 
@@ -686,7 +768,7 @@
     .order-sec {
         /*max-width: 1158px;*/
         max-height: 600px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-img/back.png);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-img/back.jpg);
     }
 }
 
@@ -695,7 +777,7 @@
         /*max-width: 1158px;*/
         max-height: 600px;
         /*возможно убрать везде*/
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-img/back.png);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-img/back.jpg);
     }
 }
 
